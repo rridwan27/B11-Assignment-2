@@ -120,6 +120,75 @@ header button {
   object-fit: cover;
 }
 
+.curriculum-section {
+  padding: 50px 0;
+  background-image: url("assets//bg.png");
+}
+.curriculum-section h2 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cards h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 30px;
+  padding: 20px 0;
+}
+
+.cards p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  padding: 20px 0 30px 0;
+}
+
+.cards a {
+  text-decoration: none;
+}
+
+.card-content {
+  width: 390px;
+  height: 475px;
+  text-align: center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-1 {
+  background: linear-gradient(to bottom, #e3f2fd, #ffffff);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card-2 {
+  background: linear-gradient(to bottom, #fff7e6, #ffffff);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.card-3 {
+  background: linear-gradient(to bottom, #f5e6ff, #ffffff);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 a {
+  color: #23d8e2;
+}
+.card-2 a {
+  color: #f19a04;
+}
+.card-3 a {
+  color: #911af9;
+}
+
 @media (max-width: 576px) {
   header {
     border-bottom: 1px solid orange;
@@ -168,5 +237,13 @@ header button {
     cursor: pointer;
     font-size: 18px;
     margin-top: 10px;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
   }
 }
