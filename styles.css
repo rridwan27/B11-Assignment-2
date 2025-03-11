@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+header {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo h3 {
+  font-weight: bold;
+  font-size: 30px;
+  color: #000;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+
+.home {
+  color: orange;
+}
+.about {
+  color: #20b5fc;
+}
+.facilities {
+  color: #23d8e2;
+}
+.admission {
+  color: #6762f0;
+}
+
+header button {
+  background-color: orange;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hero {
+  padding: 50px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content h1 {
+  font-size: 56px;
+  font-weight: bold;
+  line-height: 61px;
+  padding: 20px 0;
+}
+
+.hero-content h1 .span-1 {
+  color: #fea301;
+}
+
+.hero-content h1 .span-2 {
+  color: #01acfd;
+}
+
+.hero-content p {
+  font-size: 20px;
+  line-height: auto;
+  padding: 20px 0;
+  margin-right: 45px;
+}
+.hero-content button {
+  background-color: #111111;
+  color: #fff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.hero-image {
+  width: 468px;
+  height: 575px;
+  object-fit: cover;
+}
+
+@media (max-width: 576px) {
+  header {
+    border-bottom: 1px solid orange;
+    padding-bottom: 15px;
+  }
+
+  .logo {
+    margin-left: 10px;
+  }
+  nav {
+    display: none;
+  }
+  .contact-button {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+    font-size: 30px;
+  }
+  .hero {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 60px;
+    padding: 20px 30px;
+  }
+
+  .hero-content p {
+    font-size: 20px;
+    line-height: auto;
+    font-weight: normal;
+    padding: 20px 30px;
+  }
+  .hero-content button {
+    background-color: #111111;
+    color: #fff;
+    padding: 15px 35px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 10px;
+  }
+}
