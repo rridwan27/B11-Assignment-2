@@ -416,6 +416,15 @@ footer {
   cursor: pointer;
 }
 
+.marquee {
+  background-color: #018bcb;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 0;
+}
+
 @media (max-width: 576px) {
   header {
     border-bottom: 1px solid orange;
@@ -454,6 +463,7 @@ footer {
     line-height: auto;
     font-weight: normal;
     padding: 20px 30px;
+    margin: 0 auto;
   }
   .hero-content button {
     background-color: #111111;
@@ -472,6 +482,10 @@ footer {
     margin-top: 50px;
     align-items: center;
     gap: 20px;
+  }
+
+  .arrow-direction {
+    display: none;
   }
 
   .stories-section {
@@ -544,7 +558,7 @@ footer {
 
   .view-all-btn {
     position: absolute;
-    top: 3940px;
+    top: 3850px;
     left: 200px;
   }
 }
